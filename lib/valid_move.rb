@@ -1,4 +1,3 @@
-require "pry"
 def position_taken?(board, index)
 if board[index] == "X" or board[index] == "O"
 return true
@@ -8,7 +7,6 @@ end
 end
 
 def valid_move?(board, index)
-  #binding.pry
   if index.between?(0, 8) && (position_taken?(board, index) == false)
     return true
   else 
