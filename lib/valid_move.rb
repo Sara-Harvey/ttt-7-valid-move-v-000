@@ -9,7 +9,7 @@ end
 
 def valid_move?(board, index)
   #binding.pry
-  if index.between?(0, 8) && (position_taken? == false)
+  if index.between?(0, 8) && (position_taken?(board, index) == false)
     return true
   else 
     return nil
